@@ -29,8 +29,8 @@ const Hero = () => {
             </h4>
             <p className="mt-4 md:text-lg md:px-10 lg:px-0 ">
               Driven by a passion for technology and problem-solving, I
-              specialize in crafting seamless digital experiences from concept
-              to deployment.
+              specialize in both frontend and backend development. I turn ideas
+              into full-fledged applications.
             </p>
           </div>
 

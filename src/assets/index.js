@@ -2,7 +2,6 @@ import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
-import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -21,21 +20,20 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import publicis from "./company/publicis.png";
 import whitebox from "./company/whitebox.png";
 import prixa from "./company/prixa.png";
+import publicis from "./company/publicis.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import re from "./re.svg";
-
+import mockai from "./mockai.png";
+import personal from "./personal.png";
+import smartheart from "./smartheart.png";
+import graphy from "./graphy.png";
 export {
   logo,
   backend,
   creator,
   mobile,
-  web,
+  graphy,
   github,
   menu,
   close,
@@ -43,20 +41,19 @@ export {
   docker,
   figma,
   git,
+  smartheart,
   html,
   javascript,
   mongodb,
   nodejs,
-  publicis,
   whitebox,
   prixa,
   reactjs,
+  mockai,
   redux,
   tailwind,
+  personal,
   typescript,
   threejs,
-  carrent,
-  jobit,
-  tripguide,
-  re
+  publicis,
 };

@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -6,20 +7,17 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import CustomCarousel from "./CustomCarousel";
 import ArrowUpRight from "./canvas/icons/ArrowUpRight";
-import { Icon } from "./Icon";
-import SassIcon from "../components/canvas/aboutIcons/Sass";
-import VueIcon from "../components/canvas/aboutIcons/Vue";
-import { re } from "../assets";
 
-const ProjectCard = ({ name, description, image }) => {
+// eslint-disable-next-line react/prop-types
+const ProjectCard = ({ name, description, image, projectLink, githubLink }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", 0.5, 1)}>
-      <div className="bg-transparent border-white/[0.1] p-5  border  rounded-2xl w-full sm:h-[32rem] flex flex-col md:h-[30rem]">
+      <div className="bg-transparent border-white/[0.1] p-5  border  rounded-xl w-full sm:h-[32rem] flex flex-col md:h-[30rem]">
         <div className="relative w-full mt-2">
           <img
             src={image}
             alt="project_image"
-            className="w-full h-full object-cover rounded-2xl md:h-[15rem]"
+            className="w-full h-full object-cover rounded-lg md:h-[15rem]"
           />
         </div>
         <div className="flex flex-1 justify-between flex-col">
@@ -32,34 +30,20 @@ const ProjectCard = ({ name, description, image }) => {
           {/* Buttons */}
           <div className="flex items-center justify-between mt-7 mb-3">
             <div className="flex items-center">
-              <div
-                className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                style={{
-                  transform: `translateX(-${5 * 0 + 2}px)`,
-                }}
-              >
-                <img src={re} alt="icon5" className="p-2" />
-              </div>
-              <div
-                className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                style={{
-                  transform: `translateX(-${5 * 1 + 2}px)`,
-                }}
-              >
-                <img src={re} alt="icon5" className="p-2" />
-              </div>
-              <div
-                className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                style={{
-                  transform: `translateX(-${5 * 2 + 2}px)`,
-                }}
-              >
-                <img src={re} alt="icon5" className="p-2" />
+              <div className="flex justify-center items-center ">
+                <a
+                  href={githubLink}
+                  target="_blank"
+                  className=" text-secondary flex gap-2"
+                >
+                  View Source Code
+                  <ArrowUpRight className="size-6" />
+                </a>
               </div>
             </div>
             <div className="flex justify-center items-center ">
               <a
-                href="https://google.com"
+                href={projectLink}
                 target="_blank"
                 className=" text-secondary flex gap-2"
               >
@@ -92,15 +76,14 @@ const Works = () => {
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          real-world examples of my work. It reflects my ability to solve
+          complex problems, work with different technologies, and manage
+          projects effectively.
         </motion.p>
       </div>
       <CustomCarousel>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard key={index} {...project} />
         ))}
       </CustomCarousel>
       <CustomCarousel></CustomCarousel>

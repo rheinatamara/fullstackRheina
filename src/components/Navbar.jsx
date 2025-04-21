@@ -3,6 +3,7 @@ import InstagramIcon from "./canvas/icons/InstagramIcon";
 import LinkedinIcon from "./canvas/icons/LinkedinIcon";
 import GithubIcon from "./canvas/icons/GithubIcon";
 import { Icon } from "./NavbarIcon";
+import TiktokIcon from "./canvas/icons/TiktokIcon";
 
 const Navbar = () => {
   return (
@@ -23,6 +24,7 @@ const Navbar = () => {
             component={InstagramIcon}
             href="https://www.instagram.com/frontendRheina"
           />
+
           <Icon
             component={LinkedinIcon}
             href="https://www.linkedin.com/in/rheinatamara/"

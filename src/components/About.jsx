@@ -6,8 +6,7 @@ import NodeIcon from "../components/canvas/aboutIcons/Node";
 import CSSIcon from "../components/canvas/aboutIcons/CSS";
 import ReactIcon from "../components/canvas/aboutIcons/React";
 // import SwiftIcon from '../components/canvas/aboutIcons/Swift'
-import VueIcon from "../components/canvas/aboutIcons/Vue";
-import SassIcon from "../components/canvas/aboutIcons/Sass";
+
 import FigmaIcon from "../components/canvas/aboutIcons/Figma";
 // import GithubIcon from '../components/canvas/aboutIcons/Github'
 import mapImage from "../assets/images/map.jpg";
@@ -87,7 +86,7 @@ const hobbies = [
   {
     title: "Fitness",
     emoji: "🏋️‍♂️",
-    left: "70%",
+    left: "80%",
     top: "45%",
   },
   {
