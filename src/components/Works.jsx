@@ -12,40 +12,50 @@ import ArrowUpRight from "./canvas/icons/ArrowUpRight";
 const ProjectCard = ({ name, description, image, projectLink, githubLink }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", 0.5, 1)}>
-      <div className="bg-transparent border-white/[0.1] p-5  border  rounded-xl w-full sm:h-[32rem] flex flex-col md:h-[30rem]">
+      <div className="bg-transparent border-white/[0.1] p-5  border  rounded-xl w-full sm:h-full flex flex-col md:h-[30rem]">
         <div className="relative w-full mt-2">
           <img
             src={image}
             alt="project_image"
-            className="w-full h-full object-cover rounded-lg md:h-[15rem]"
+            className="w-full h-[15rem] object-cover rounded-lg md:h-[15rem]"
           />
         </div>
         <div className="flex flex-1 justify-between flex-col">
           {/* Title and Description */}
           <div className="mt-5">
-            <h3 className="text-white font-bold text-[24px]">{name}</h3>
-            <p className="mt-2 text-white/60 text-[14px]">{description}</p>
+            <h3 className="text-white text-center md:text-start font-bold text-[24px]">
+              {name}
+            </h3>
+            <p className="mt-2 text-center text-white/60 md:text-start text-[14px]">
+              {description}
+            </p>
           </div>
 
           {/* Buttons */}
-          <div className="flex items-center justify-between mt-7 mb-3">
-            <div className="flex items-center">
-              <div className="flex justify-center items-center ">
+          <div
+            className={`flex ${
+              githubLink
+                ? "flex-col md:flex-row md:justify-between"
+                : "justify-center md:justify-end"
+            } items-center text-center mt-7 mb-3`}
+          >
+            {githubLink && (
+              <div className="flex items-center mb-4 md:mb-0 justify-center">
                 <a
                   href={githubLink}
                   target="_blank"
-                  className=" text-secondary flex gap-2"
+                  className="text-secondary flex gap-2"
                 >
                   View Source Code
                   <ArrowUpRight className="size-6" />
                 </a>
               </div>
-            </div>
-            <div className="flex justify-center items-center ">
+            )}
+            <div className="flex justify-center items-center">
               <a
                 href={projectLink}
                 target="_blank"
-                className=" text-secondary flex gap-2"
+                className="text-secondary flex gap-2"
               >
                 View Project
                 <ArrowUpRight className="size-6" />

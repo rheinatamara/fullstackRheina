@@ -3,6 +3,7 @@ import {
   prixa,
   smartheart,
   mockai,
+  mercubuana,
   publicis,
   graphy,
   personal,
@@ -51,13 +52,13 @@ const experiences = [
     ],
   },
   {
-    title: "Freelace UI/UX Designer",
+    title: "Freelance UI/UX Designer",
     company_name: "Publicis Groupe",
     icon: publicis,
     iconBg: "#242323",
     date: "Jan 2023 - Dec 2023",
     points: [
-      "Responsible for maintaining patient data to ensure accuracy and compliance",
+      "Maintained simplicity, ease of navigation, and responsive design to accommodate diverse user base",
       "Utilized Publicis Groupe’s brand colors, fonts, and visual elements for cohesive feel.",
       "Ensured the site is accessible to all users with clear text, captions, and a readable font.",
     ],
@@ -92,6 +93,14 @@ const projects = [
     image: graphy,
     projectLink: "https://l1nq.com/yIw8Z",
     githubLink: "https://github.com/rheinatamara/Graphy",
+  },
+  {
+    name: "Mercu Buana University",
+    description:
+      "I implemented the user interface for the Mercu Buana University's website using React and SCSS, focusing on clean, responsive, and maintainable code that aligned with the provided design.",
+
+    image: mercubuana,
+    projectLink: "https://universitas-mercu-buana.web.app/",
   },
   {
     name: "FullstackRheina",

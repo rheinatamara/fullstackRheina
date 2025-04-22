@@ -28,6 +28,7 @@ import mockai from "./mockai.png";
 import personal from "./personal.png";
 import smartheart from "./smartheart.png";
 import graphy from "./graphy.png";
+import mercubuana from "./mercubuana.png";
 export {
   logo,
   backend,
@@ -38,6 +39,7 @@ export {
   menu,
   close,
   css,
+  mercubuana,
   docker,
   figma,
   git,

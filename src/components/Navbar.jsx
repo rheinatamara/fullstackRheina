@@ -22,7 +22,7 @@ const Navbar = () => {
           /> */}
           <Icon
             component={InstagramIcon}
-            href="https://www.instagram.com/frontendRheina"
+            href="https://www.instagram.com/fullstackrheina/"
           />
 
           <Icon
